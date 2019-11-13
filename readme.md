@@ -1,15 +1,12 @@
 # Autojs Pro 8.0 新增方法 #
 
-编写时间:2019/11/13
-
-编写人: 稻草人
 
 ----------
 #### &#8195;&#8195;从Pro 7.0 版本以后Autojs接入了Shizuku的授权功能,该功能需要手机连接电脑后,在电脑上使用adb命令来激活Shizuku,再在Shizuku上授权AutojsPro.授权的好处是:可以通过adb权限调用原本需要root权限才能使用的系统api.例如Tap Swipe等函数可以免root执行.可以调用shell命令切换飞行模式,杀死app的后台进程,清理app的应用数据,可以使用shell直接启动intent,实现类似冰箱/黑域app那样的功能等等...当然弊端就是每次重启后授权消失,需要重新激活! ####
 
 ## Shizuku下载地址: ##
 
-	[https://www.coolapk.com/apk/moe.shizuku.privileged.api](https://www.coolapk.com/apk/moe.shizuku.privileged.api)
+	https://www.coolapk.com/apk/moe.shizuku.privileged.api
 `关于Shizuku的激活方法,在该app内有使用教程,需要会使用adb命令.`
 
 ----------
