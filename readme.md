@@ -10,8 +10,19 @@
 `关于Shizuku的激活方法,在该app内有使用教程,需要会使用adb命令.`
 
 ----------
+## 内容索引 ##
 
-## $shell ##
+### <a href="#shell">$shell</a> ###
+### <a href="#base64">$base64</a> ###
+### <a href="#crypto">$crypto</a> ###
+### <a href="#notifications">$notifications</a> ###
+### <a href="#zip">$zip</a> ###
+### <a href="#app">app模块新增方法</a> ###
+### <a href="#device">device新增方法</a> ###
+### <a href="#files">$files模块新增方法</a> ###
+
+## <a name="shell">$shell</a> ##
+
 ### $shell.checkAccess(permission); ###
 
 &#8195;&#8195;检查权限
@@ -117,8 +128,10 @@
 
 ----------
 
-## $base64 ##
-字符串的base64加密与解密
+## <a name="base64">$base64</a> ##
+
+&#8195;&#8195;字符串的base64加密与解密
+
 ### $base64.encode(str); ###
 
 &#8195;&#8195;将字符串进行base64加密
@@ -146,7 +159,7 @@
 
 ----------
 
-## $crypto ##
+## <a name="crypto">$crypto</a> ##
 
 新增的一些加密算法, 支持MD5, SHA, AES, RSA等...
 
@@ -272,7 +285,7 @@
 
 ----------
 
-## $notifications ##
+## <a name="crypto">$notifications</a> ##
 
 发布一个通知,用法未知
 
@@ -409,7 +422,7 @@
 
 
 ----------
-## app模块新增方法 ##
+## <a name="app">app模块新增方法</a> ##
 
 ### app.getInstalledApps(); ###
 
@@ -435,7 +448,7 @@
 
 ----------
 
-## device模块新增属性 ##
+## <a name="device">device模块新增属性</a> ##
 
 ### device.screenRotation ###
 
@@ -458,7 +471,7 @@
 
 
 ----------
-## files模块新增方法 ##
+## <a name="files">files模块新增方法</a> ##
 
 ### $files.observe() ###
 
