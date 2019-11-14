@@ -12,14 +12,14 @@
 ----------
 ## 内容索引 ##
 
-### <a href="#shell">$shell</a> ###
-### <a href="#base64">$base64</a> ###
-### <a href="#crypto">$crypto</a> ###
-### <a href="#notifications">$notifications</a> ###
-### <a href="#zip">$zip</a> ###
-### <a href="#app">app模块新增方法</a> ###
-### <a href="#device">device新增方法</a> ###
-### <a href="#files">$files模块新增方法</a> ###
+### <a href="#shell">$shell_新增</a> ###
+### <a href="#base64">$base64_加密解密</a> ###
+### <a href="#crypto">$crypto_MD5/SHA/AES/RAS等加密</a> ###
+### <a href="#notifications">$notifications_发布通知</a> ###
+### <a href="#zip">$zip_文件压缩与解压</a> ###
+### <a href="#app">app_新增方法</a> ###
+### <a href="#device">device_新增方法</a> ###
+### <a href="#files">$files_新增方法</a> ###
 
 ## <a name="shell">$shell</a> ##
 
