@@ -215,17 +215,17 @@
 
 ### $crypto.encrypt(data, key, algorithm[, options]); ###
 
-`data` `{string}` 要加密的数据
+&#8195;&#8195;`data` `{string}` 要加密的数据
 
-`key` `{object}` 秘钥
+&#8195;&#8195;`key` `{object}` 秘钥
 
-`algorithm` `{string}` 加密方式 
+&#8195;&#8195;`algorithm` `{string}` 加密方式 
 
-AES加密:`"AES/ECB/PKCS5padding"`
+&#8195;&#8195;&#8195;&#8195;AES加密:`"AES/ECB/PKCS5padding"`
 
-RSA加密:`"RSA/ECB/PKCS1padding"`
+&#8195;&#8195;&#8195;&#8195;RSA加密:`"RSA/ECB/PKCS1padding"`
 
-`options` `{object}` 确定数据的输入/输出类型
+&#8195;&#8195;`options` `{object}` 确定数据的输入/输出类型
 
 &#8195;&#8195;&#8195;&#8195;`input` `{string}` 输入的数据类型,`"string"`[默认]或`"file"`,  **若输入的类型是文件时,此选项必填**
 
@@ -443,9 +443,9 @@ RSA加密:`"RSA/ECB/PKCS1padding"`
 
 &#8195;&#8195;&#8195;&#8195;  0 : 手机竖直向上
 
-&#8195;&#8195;&#8195;&#8195; 90 : 手机向左旋转屏幕
+&#8195;&#8195;&#8195;&#8195; 90 : 手机向右旋转屏幕
 
-&#8195;&#8195;&#8195;&#8195;270 : 手机向右旋转屏幕
+&#8195;&#8195;&#8195;&#8195;270 : 手机向左旋转屏幕
 
 
 ### device.screenOrientation ###
