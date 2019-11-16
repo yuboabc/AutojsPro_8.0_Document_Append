@@ -74,7 +74,7 @@
        	exit();
     }
     $shell.setDefaultOptions({adb : true}); //将shell切换到adb模式
-    
+    var friendQQ = "289986635"; //你好友的QQ号码
     var option = {
     	packageName : "com.tencent.mobileqq",
     	className : "com.tencent.mobileqq.activity.qwallet.SendHbActivity",
