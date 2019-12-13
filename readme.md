@@ -2,7 +2,7 @@
 
 
 ----------
-#### &#8195;&#8195;从Pro 7.0 版本以后Autojs接入了Shizuku的授权功能,该功能需要手机连接电脑后,在电脑上使用adb命令来激活Shizuku,再在Shizuku上授权AutojsPro.授权的好处是:可以通过adb权限调用原本需要root权限才能使用的系统api.例如Tap Swipe等函数可以免root执行.可以调用shell命令切换飞行模式,杀死app的后台进程,清理app的应用数据,可以使用shell直接启动intent,实现类似冰箱/黑域app那样的功能等等...当然弊端就是每次重启后授权消失,需要重新激活! ####
+#### &#8195;&#8195;从Pro 7.0 版本以后Autojs接入了Shizuku的授权功能,该功能需要手机连接电脑后,在电脑上使用adb命令来激活Shizuku,再在Shizuku上授权AutojsPro.授权的好处是:可以通过adb权限调用原本需要root权限才能使用的系统api.例如Tap Swipe等函数可以免root执行.可以调用shell命令切换飞行模式,杀死app的后台进程,清理app的应用数据,实现类似冰箱/黑域app那样的功能等等...当然弊端就是每次重启后授权消失,需要重新激活! ####
 
 ## Shizuku下载地址: ##
 
@@ -53,38 +53,6 @@
     }
     $shell.setDefaultOptions({adb : true}); //将shell切换到adb模式
     $shell("am force-stop com.tencent.mobileqq"); //使用adb权限杀掉QQ的进程,直接关闭QQ
-#### 例2:打开给指定好友发红包界面 ####
-
-先看一下root权限的代码:
-
-    var friendQQ = "289986635"; //你好友的QQ号码
-    app.startActivity({
-    	packageName : "com.tencent.mobileqq",
-    	className : "com.tencent.mobileqq.activity.qwallet.SendHbActivity",
-    	extras : {
-    		extra_data : '{"recv_type":1,"recv_uin":'+ friendQQ +',"channel":1,"bus_type":"1"}',
-    	},
-    	root : true  //需要root权限才能执行
-    });
-然后再来看一下使用adb权限如何使用
-
-    var isAdb = $shell.checkAccess("adb");
-    if (!isAdb) {
-     	alert("请先使用Shizuku授权,再运行");
-       	exit();
-    }
-    $shell.setDefaultOptions({adb : true}); //将shell切换到adb模式
-    var friendQQ = "289986635"; //你好友的QQ号码
-    var option = {
-    	packageName : "com.tencent.mobileqq",
-    	className : "com.tencent.mobileqq.activity.qwallet.SendHbActivity",
-    	extras : {
-    		extra_data : '{"recv_type":1,"recv_uin":'+ friendQQ +',"channel":1,"bus_type":"1"}',
-    	}
-    }
-    $shell("am start " + app.intentToShell(option));
-	
-示例2中root权限下的代码和adb权限下的代码效果相同.
 
 在adb模式下内置的Tap、Swipe、RootAutomator将使用adb权限
 
